@@ -6,9 +6,6 @@
 @JS()
 library jsifier_test;
 
-import 'dart:js';
-import 'dart:convert';
-
 import 'package:js/js.dart';
 import 'package:test/test.dart';
 import 'package:jsifier/jsifier.dart';
@@ -26,6 +23,10 @@ void main() {
     test('can convert a JsObject', () {
       var dartObj = Jsifier.decode(groceries.dairy);
       expect(dartObj.keys.length, equals(2));
+    });
+
+    test('exposes stringify()', () {
+      expect(stringify(groceries.dairy), hasLength(greaterThan(0)));
     });
   });
 }

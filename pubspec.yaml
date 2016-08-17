@@ -1,12 +1,14 @@
 name: jsifier
 description: convert JS objects into Dart maps and lists
-version: 1.0.0
+version: 1.1.0
 author: John Ryan <john.p.ryan4@gmail.com>
 homepage: http://github.com/johnpryan/jsifier
 
 environment:
-  sdk: '>=1.0.0 <2.0.0'
+  sdk: '>=1.18.0 <2.0.0'
+
+dependencies:
+  js: ^0.6.0
 
 dev_dependencies:
-  js: ^0.6.0
   test: '>=0.12.0 <0.13.0'
