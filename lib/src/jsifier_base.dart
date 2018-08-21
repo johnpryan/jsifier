@@ -11,5 +11,5 @@ import 'dart:convert';
 external String stringify(obj);
 
 class Jsifier {
-  static dynamic decode(obj) => JSON.decode(stringify(obj));
+  static dynamic decode(obj) => json.decode(stringify(obj));
 }
